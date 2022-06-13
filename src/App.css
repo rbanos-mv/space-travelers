@@ -3,3 +3,44 @@
   margin: 0;
   padding: 0;
 }
+
+.App {
+  min-height: 100vh;
+}
+
+nav {
+  padding: 1rem 2rem;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #999;
+  padding: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  margin-right: 1rem;
+}
+
+.app-title {
+  display: inline-block;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #3c85fe;
+  padding: 1rem;
+}
+
+.activated {
+  text-decoration: underline;
+}

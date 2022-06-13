@@ -1,6 +1,7 @@
 const Missions = () => (
   <div>
-    <BooksList books={booksArr} />
-    <AddBookForm />
+    Missions page
   </div>
 );
+
+export default Missions;

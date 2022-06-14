@@ -6,7 +6,7 @@ const MissionsList = (props) => {
     <table>
       <thead>
         <tr>
-          <th className="left-col"><h4 className="mission-title">Mission</h4></th>
+          <th><h4 className="mission-title">Mission</h4></th>
           <th className="desc-col"><p>Description</p></th>
           <th className="status-col"><p>Status</p></th>
           <th className="join-col"> </th>
@@ -16,7 +16,7 @@ const MissionsList = (props) => {
         {
           missions.map((mission) => (
             <tr key={missions.indexOf(mission)}>
-              <td>{mission.mission_name}</td>
+              <td className="left-col">{mission.mission_name}</td>
               <td>{mission.description}</td>
               <td>NOT A MEMBER</td>
               <td><button className="join-btn" type="button">Join Mission</button></td>

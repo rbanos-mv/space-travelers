@@ -12,4 +12,13 @@ const apiGetRockets = () => fetch(`${API_URL}/rockets`)
     throw error;
   });
 
-export default apiGetRockets;
+const apiGetMissions = async () => {
+  try {
+    const res = await fetch(`${API_URL}/missions`);
+    return res.json();
+  } catch (error) {
+    return error;
+  }
+};
+
+export { apiGetRockets, apiGetMissions };

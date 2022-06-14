@@ -1,6 +1,6 @@
 import { apiGetMissions } from '../../modules/api';
 
-const RETRIEVE_MISSIONS = 'space-travelers/missions/RETRIEVE_MISSIONS';
+export const RETRIEVE_MISSIONS = 'space-travelers/missions/RETRIEVE_MISSIONS';
 
 export const retrieveMissions = () => async (dispatch) => {
   const data = await apiGetMissions();
@@ -18,8 +18,7 @@ export const retrieveMissions = () => async (dispatch) => {
 export default function missionsReducer(state = [], action = {}) {
   switch (action.type) {
     case RETRIEVE_MISSIONS:
-      console.log('action.missions', action.missions);
-      return [...action.missions];
+      return action.missions;
     default: return state;
   }
 }

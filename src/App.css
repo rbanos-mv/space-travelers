@@ -111,12 +111,16 @@ ul {
 table {
   border-spacing: 0;
 }
-table, th, td {
-  border:1px solid #999;
+
+table,
+th,
+td {
+  border: 1px solid #999;
   text-align: left;
 }
 
-th, td {
+th,
+td {
   padding: 1rem;
 }
 

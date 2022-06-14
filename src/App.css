@@ -113,3 +113,24 @@ ul {
   margin-right: 4px;
   padding: 2px 4px;
 }
+
+.profile {
+  width: calc(50% - 1rem);
+}
+
+.profile-row {
+  justify-content: space-between;
+}
+
+h2 {
+  padding-bottom: 8px;
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightslategrey;
+  font-size: 16px;
+  height: 32px;
+  padding: 8px 16px;
+}

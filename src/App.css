@@ -44,3 +44,62 @@ nav {
 .activated {
   text-decoration: underline;
 }
+
+.pages-content {
+  padding: 1rem 3rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.rocket-card {
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.rocket-info {
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 1.5rem;
+}
+
+.rocket-name {
+  padding-bottom: 0.5rem;
+}
+
+.rocket-description {
+  font-size: 16px;
+  padding-bottom: 0.5rem;
+}
+
+.cancel-btn,
+.reserve-btn {
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+}
+
+.cancel-btn {
+  background-color: white;
+  border: 1px solid lightslategrey;
+  color: lightslategrey;
+}
+
+.reserve-btn {
+  background-color: #0290ff;
+  border: 1px solid #0290ff;
+  color: white;
+}

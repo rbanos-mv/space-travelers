@@ -7,7 +7,7 @@ const RocketList = (props) => {
     <ul>
       {rockets.map((rocket) => {
         const {
-          id, rocketName, description, flickrImage,
+          id, rocketName, description, flickrImage, reserved,
         } = rocket;
         return (
           <Rocket
@@ -17,6 +17,7 @@ const RocketList = (props) => {
               rocketName,
               description,
               flickrImage,
+              reserved,
             }}
           />
         );
@@ -32,6 +33,7 @@ RocketList.propTypes = {
       rocketName: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       flickrImage: PropTypes.string.isRequired,
+      reserved: PropTypes.bool,
     }),
   ).isRequired,
 };

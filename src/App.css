@@ -118,3 +118,7 @@ table, th, td {
 th, td {
   padding: 1rem;
 }
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}

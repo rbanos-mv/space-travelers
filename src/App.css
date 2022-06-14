@@ -128,6 +128,22 @@ tbody tr:nth-child(odd) {
   font-weight: bold;
 }
 
+.status {
+  background-color: #6d757d;
+  color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+  font-size: small;
+  width: max-content;
+}
+
+.join-btn {
+  padding: 0.5rem;
+  background-color: inherit;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
 .reserve-badge {
   background-color: #0290ff;
   border-radius: 5px;

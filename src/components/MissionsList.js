@@ -18,7 +18,7 @@ const MissionsList = (props) => {
             <tr key={missions.indexOf(mission)}>
               <td className="left-col">{mission.mission_name}</td>
               <td>{mission.description}</td>
-              <td>NOT A MEMBER</td>
+              <td><div className="status">NOT A MEMBER</div></td>
               <td><button className="join-btn" type="button">Join Mission</button></td>
             </tr>
           ))

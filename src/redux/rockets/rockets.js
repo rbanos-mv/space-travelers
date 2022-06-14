@@ -1,4 +1,4 @@
-import apiGetRockets from '../../modules/api';
+import { apiGetRockets } from '../../modules/api';
 
 const GET = 'spaceTravelers/Rocket/GET';
 

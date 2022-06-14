@@ -103,3 +103,13 @@ ul {
   border: 1px solid #0290ff;
   color: white;
 }
+
+.reserve-badge {
+  background-color: #0290ff;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  margin-right: 4px;
+  padding: 2px 4px;
+}

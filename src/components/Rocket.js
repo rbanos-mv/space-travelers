@@ -12,10 +12,13 @@ const Rocket = (props) => {
 
   return (
     <li className="row rocket-card">
-      <img src={flickrImage} alt="{rocketName}" width="250" />
+      <img src={flickrImage} alt="{rocketName}" width="250" height="auto" />
       <div className="column rocket-info">
         <h3 className="rocket-name">{rocketName}</h3>
-        <p className="rocket-description">{description}</p>
+        <p className="rocket-description">
+          {reserved && <span className="reserve-badge">Reserved</span>}
+          {description}
+        </p>
         {!reserved && (
           <button type="button" id={id} className="reserve-btn" onClick={reserve}>
             Reserve Rocket

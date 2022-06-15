@@ -138,7 +138,8 @@ tbody tr:nth-child(odd) {
   padding: 2px;
   border-radius: 5px;
   font-size: small;
-  width: max-content;
+  width: 7rem;
+  text-align: center;
 }
 
 .active-member {
@@ -150,7 +151,7 @@ tbody tr:nth-child(odd) {
   background-color: inherit;
   border-radius: 4px;
   font-weight: 600;
-  width: max-content;
+  width: 8rem;
 }
 
 .leave-btn {

@@ -4,10 +4,13 @@ import { retrieveMissions } from '../redux/missions/missions';
 import MissionsList from '../components/MissionsList';
 
 const Missions = () => {
-  const missions = useSelector((state) => state.missions);
   const dispatch = useDispatch();
+  const missions = useSelector((state) => state.missions);
+
   useEffect(() => {
-    dispatch(retrieveMissions());
+    if (missions.length === 0) {
+      dispatch(retrieveMissions());
+    }
   }, []);
 
   return (

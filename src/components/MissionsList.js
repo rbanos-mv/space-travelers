@@ -1,7 +1,17 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { joinMission, leaveMission } from '../redux/missions/missions';
 
 const MissionsList = (props) => {
   const { missions } = props;
+  const dispatch = useDispatch();
+  const joinMissionHandeler = (id) => {
+    dispatch(joinMission(id));
+  };
+  const leaveMissionHandeler = (id) => {
+    dispatch(leaveMission(id));
+  };
+
   return (
     <table>
       <thead>
@@ -15,11 +25,33 @@ const MissionsList = (props) => {
       <tbody>
         {
           missions.map((mission) => (
-            <tr key={missions.indexOf(mission)}>
+            <tr key={mission.mission_id}>
               <td className="left-col">{mission.mission_name}</td>
               <td>{mission.description}</td>
-              <td><div className="status">NOT A MEMBER</div></td>
-              <td><button className="join-btn" type="button">Join Mission</button></td>
+              <td>
+                {mission.reserved && (
+                <div className="status active-member">
+                  Active Member
+                </div>
+                )}
+                {!mission.reserved && (
+                <div className="status">
+                  NOT A MEMBER
+                </div>
+                )}
+              </td>
+              <td>
+                {mission.reserved && (
+                <button className="join-btn leave-btn" type="button" onClick={() => leaveMissionHandeler(mission.mission_id)}>
+                  Leave Mission
+                </button>
+                )}
+                {!mission.reserved && (
+                <button className="join-btn" type="button" onClick={() => joinMissionHandeler(mission.mission_id)}>
+                  Join Mission
+                </button>
+                )}
+              </td>
             </tr>
           ))
         }
@@ -30,6 +62,7 @@ const MissionsList = (props) => {
 
 MissionsList.propTypes = {
   missions: PropTypes.arrayOf(PropTypes.shape({
+    mission_id: PropTypes.string.isRequired,
     mission_name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
   })).isRequired,

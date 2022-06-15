@@ -141,11 +141,21 @@ tbody tr:nth-child(odd) {
   width: max-content;
 }
 
+.active-member {
+  background-color: #4aa2b8;
+}
+
 .join-btn {
   padding: 0.5rem;
   background-color: inherit;
   border-radius: 4px;
   font-weight: 600;
+  width: max-content;
+}
+
+.leave-btn {
+  border-color: #f30798;
+  color: #f30798;
 }
 
 .reserve-badge {

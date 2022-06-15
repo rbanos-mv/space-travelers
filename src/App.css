@@ -104,6 +104,50 @@ ul {
   color: white;
 }
 
+.missions-page {
+  padding: 1rem 3rem;
+}
+
+table {
+  border-spacing: 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid #999;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.left-col {
+  font-weight: bold;
+}
+
+.status {
+  background-color: #6d757d;
+  color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+  font-size: small;
+  width: max-content;
+}
+
+.join-btn {
+  padding: 0.5rem;
+  background-color: inherit;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
 .reserve-badge {
   background-color: #0290ff;
   border-radius: 5px;

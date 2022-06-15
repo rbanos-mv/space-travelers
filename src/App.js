@@ -11,8 +11,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Rockets />} />
-        <Route path="/missions" element={<Missions />} />
-        <Route path="/my-profile" element={<MyProfile />} />
+        <Route path="missions" element={<Missions />} />
+        <Route path="my-profile" element={<MyProfile />} />
       </Routes>
     </div>
   );

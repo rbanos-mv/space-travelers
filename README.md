@@ -88,6 +88,11 @@ npm run deploy
 - Twitter: [@RobertoBanosMV](https://twitter.com/RobertoBanosMV)
 - LinkedIn: [Roberto A Baños Alvarez](https://linkedin.com/in/roberto-a-baños-alvarez-500766234)
 
+👤 **Mahmoud Makhlouf**
+
+- GitHub: [@devMahmoud](https://github.com/devMahmoud)
+- LinkedIn: [Roberto A Baños Alvarez](https://www.linkedin.com/in/mahmoud-makhlouf-844271211/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

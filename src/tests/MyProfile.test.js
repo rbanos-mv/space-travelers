@@ -34,4 +34,25 @@ describe('Test the MyProfile components', () => {
     );
     expect(screen.queryByText('No reserved missions!')).toBeTruthy();
   });
+
+  test('shows a rocket added to My Rockets when there is a reserved rocket', () => {
+    const store = setupStore(true);
+    const { container } = render(
+      <Provider store={store}>
+        <MyProfile />
+      </Provider>,
+    );
+    expect(container.getElementsByClassName('reserved-rockets')).toHaveLength(1);
+    expect(screen.queryByText('No reserved rockets!')).toBeFalsy();
+  });
+
+  test('display No reserved rockets when there are no reserved rockets', () => {
+    const store = setupStore(false);
+    render(
+      <Provider store={store}>
+        <MyProfile />
+      </Provider>,
+    );
+    expect(screen.queryByText('No reserved rockets!')).toBeTruthy();
+  });
 });

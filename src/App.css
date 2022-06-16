@@ -45,10 +45,6 @@ nav {
   text-decoration: underline;
 }
 
-.pages-content {
-  padding: 1rem 3rem;
-}
-
 ul {
   list-style-type: none;
 }
@@ -104,7 +100,9 @@ ul {
   color: white;
 }
 
-.missions-page {
+.missions-page,
+.pages-content,
+.rockets-page {
   padding: 1rem 3rem;
 }
 
@@ -138,8 +136,7 @@ tbody tr:nth-child(odd) {
   padding: 2px;
   border-radius: 5px;
   font-size: small;
-  width: 7rem;
-  text-align: center;
+  width: max-content;
 }
 
 .active-member {
@@ -151,7 +148,7 @@ tbody tr:nth-child(odd) {
   background-color: inherit;
   border-radius: 4px;
   font-weight: 600;
-  width: 8rem;
+  width: max-content;
 }
 
 .leave-btn {

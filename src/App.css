@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+nav {
+  padding: 1rem 2rem;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #999;
+  padding: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  margin-right: 1rem;
+}
+
+.app-title {
+  display: inline-block;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #3c85fe;
+  padding: 1rem;
+}
+
+.activated {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.rocket-card {
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.rocket-info {
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 1.5rem;
+}
+
+.rocket-name {
+  padding-bottom: 0.5rem;
+}
+
+.rocket-description {
+  font-size: 16px;
+  padding-bottom: 0.5rem;
+}
+
+.cancel-btn,
+.reserve-btn {
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+}
+
+.cancel-btn {
+  background-color: white;
+  border: 1px solid lightslategrey;
+  color: lightslategrey;
+}
+
+.reserve-btn {
+  background-color: #0290ff;
+  border: 1px solid #0290ff;
+  color: white;
+}
+
+.missions-page,
+.pages-content,
+.rockets-page {
+  padding: 1rem 3rem;
+}
+
+table {
+  border-spacing: 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid #999;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.left-col {
+  font-weight: bold;
+}
+
+.status {
+  background-color: #6d757d;
+  color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+  font-size: small;
+  width: max-content;
+}
+
+.active-member {
+  background-color: #4aa2b8;
+}
+
+.join-btn {
+  padding: 0.5rem;
+  background-color: inherit;
+  border-radius: 4px;
+  font-weight: 600;
+  width: max-content;
+}
+
+.leave-btn {
+  border-color: #f30798;
+  color: #f30798;
+}
+
+.reserve-badge {
+  background-color: #0290ff;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  margin-right: 4px;
+  padding: 2px 4px;
+}
+
+.profile {
+  width: calc(50% - 1rem);
+}
+
+.profile-row {
+  justify-content: space-between;
+}
+
+h2 {
+  padding-bottom: 8px;
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightslategrey;
+  font-size: 16px;
+  height: 32px;
+  padding: 8px 16px;
+}

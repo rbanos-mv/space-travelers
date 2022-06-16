@@ -1,8 +1,30 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Space Travelers' Hub website
 
-> Description the project.
+> This is a web application for a company that provides commercial and scientific space travel services. The application has three pages: Rockets, Missions and My Profile.
+> <br>
+> <br>
+> The Rockets section displays a list of all available SpaceX rockets. Users can book each rocket by clicking the reservation button or cancel the previously made booking.
+> <br>
+> <br>
+> <img src="
+>   https://raw.githubusercontent.com/microverseinc/curriculum-react-redux/main/group-project/images/space-travelers__rockets.png?token=GHSAT0AAAAAABU7BSQ47LSECR6SDHMWJB56YVLTDKA" alt="Space Travelers Hub" width="700px" />
+> <br>
+> <br>
+> The Missions section displays a list of current missions along with their brief description and participation status. There is also a button next to each mission that allows users to join the selected mission or leave the mission the user joined earlier.
+> <br>
+> <br>
+> <img src="https://raw.githubusercontent.com/microverseinc/curriculum-react-redux/main/group-project/images/space-travelers__missions.png?token=GHSAT0AAAAAABU7BSQ5JOHBXPHFQLL6CJWEYVLTE5Q" alt="Space Travelers Hub" width="700px" />
+> <br>
+> <br>
+> The My Profile section displays all reserved rockets and space missions.
+> <br>
+> <br>
+> <img src="https://raw.githubusercontent.com/microverseinc/curriculum-react-redux/main/group-project/images/space-travelers__my-profile.png?token=GHSAT0AAAAAABU7BSQ5QMTXO2SQICF3T45WYVLTFSQ" alt="Space Travelers Hub" width="700px" />
+> <br>
+> <br>
+> It also allow users to book rockets and join selected space missions. The data in the application is fetched from the real live data from the [SpaceX REST API](https://github.com/r-spacex/SpaceX-API).
 
 ## Built With
 
@@ -91,7 +113,7 @@ npm run deploy
 👤 **Mahmoud Makhlouf**
 
 - GitHub: [@devMahmoud](https://github.com/devMahmoud)
-- LinkedIn: [Roberto A Baños Alvarez](https://www.linkedin.com/in/mahmoud-makhlouf-844271211/)
+- LinkedIn: [Mahmoud Makhlouf](https://www.linkedin.com/in/mahmoud-makhlouf-844271211/)
 
 ## 🤝 Contributing
 
@@ -106,6 +128,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse](https://www.microverse.org/) for the motivation.
+- [SpaceX REST API](https://github.com/r-spacex/SpaceX-API)
 
 ## 📝 License
 

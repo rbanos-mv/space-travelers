@@ -6,7 +6,7 @@ const ReservedMissions = () => {
   return (
     <div>
       {!!reservedMissions.length && (
-        <ul>
+        <ul className="joined-missions">
           {reservedMissions.map((mission) => (
             <li key={mission.mission_id} className="profile-item">
               {mission.mission_name}

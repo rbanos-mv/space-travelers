@@ -7,7 +7,7 @@ const ReservedRockets = () => {
   return (
     <div>
       {!!reservedRockets.length && (
-        <ul>
+        <ul className="reserved-rockets">
           {reservedRockets.map((rocket) => (
             <li key={rocket.id} className="profile-item">
               {rocket.rocketName}
